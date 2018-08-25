@@ -8,8 +8,12 @@ module.exports = {
     }, 
     // a function which handles posting a message to the database
     post: function (req, res) {
-      // console.log('messages post',req.body);
-    } 
+      console.log(req.body);
+      models.messages.post(req.body, (response)=>{
+        // console.log(response);
+        res.send(response);
+      });
+    }
   },
 
   users: {

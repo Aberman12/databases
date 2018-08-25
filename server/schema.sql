@@ -14,7 +14,7 @@ CREATE TABLE rooms (
   roomname varchar(35) NOT NULL
 );
 
-CREATE TABLE message (
+CREATE TABLE messages (
   messages_id integer NOT NULL auto_increment PRIMARY KEY,
   messages text NOT NULL,
   
